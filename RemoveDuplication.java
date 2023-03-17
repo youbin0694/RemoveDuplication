@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -17,7 +18,7 @@ public class RemoveDuplication {
      * 
      */
     public static void main(String args[]) {
-        List<Integer> DuplicateList = Arrays.asList(1, 1, 2, 3, 4, 4);
+        List<Integer> DuplicateList = new ArrayList<>(Arrays.asList(1, 1, 2, 3, 4, 4));
         Set<Integer> RemoveDuplicationSet = new HashSet<>(DuplicateList);
         System.out.println(DuplicateList);
         System.out.println(RemoveDuplicationSet);
